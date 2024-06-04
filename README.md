@@ -11,6 +11,10 @@ OOPへの理解が甘すぎたので改めてPythonで勉強
 <p>参考</p>
 
 [![https://www.youtube.com/watch?v=7_hNvwSYEmo](https://img.youtube.com/vi/7_hNvwSYEmo/0.jpg)](https://www.youtube.com/watch?v=7_hNvwSYEmo)
+<br>
+[なぜPythonにはsetter/getterメソッドがないのか？](https://qiita.com/tetsuro731/items/e6b1a28f3e9b6b158fb9)
+<br>
+[オブジェクト指向でなぜつくるのか第3版](https://amzn.asia/d/hNiANSl)
 
 ## 環境
 | 言語・フレームワーク  | バージョン  |
