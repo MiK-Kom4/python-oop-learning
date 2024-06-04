@@ -1,6 +1,7 @@
 from game import Game
-from pokemon import Pokemon
+from pokemon import Pikachu, Hitokage
 
 game = Game()
-pokemon = Pokemon('ピカチュウ', 20, 10)
-game.battle(pokemon)
+pikachu = Pikachu()
+hitokage = Hitokage()
+game.battle(pikachu, hitokage)
