@@ -11,3 +11,9 @@ OOPへの理解が甘すぎたので改めてPythonで勉強
 <p>参考</p>
 
 [![https://www.youtube.com/watch?v=7_hNvwSYEmo](https://img.youtube.com/vi/7_hNvwSYEmo/0.jpg)](https://www.youtube.com/watch?v=7_hNvwSYEmo)
+
+## 環境
+| 言語・フレームワーク  | バージョン  |
+| --------------------- |--------|
+| Python                | 3.11.9 |
+
