@@ -6,6 +6,7 @@
 PythonでOOP勉強
 
 ## プロジェクトについて
+
 設計をするにあたり[Udemy](https://www.udemy.com/share/10a9583@D-5ZtaWzYBDJACMCvGYyk0kKL9_LTBEwlL0qxDQ2t2ZOKiqzOYEuojFS-wiMowlTrw==/)の講座を見ようとしたが、OOPへの理解が甘すぎたので改めてPythonで勉強
 
 <p>参考</p>
