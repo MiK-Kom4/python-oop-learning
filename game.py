@@ -1,6 +1,25 @@
 class Game:
-    def battle(self, pokemon1, pokemon2):
-        print(f'{pokemon1.name}が現れた！{pokemon1.name}のHPは{pokemon1.hp}だ！')
-        print(f'{pokemon2.name}が現れた！{pokemon2.name}のHPは{pokemon2.hp}だ！')
-        pokemon1.attack()
-        pokemon2.attack()
+    def __init__(self, pokemon1, pokemon2):
+        self._pokemon1 = pokemon1
+        self._pokemon2 = pokemon2
+    def battle(self):
+        self._start()
+        winner, loser = self._attack()
+        self._show_result(winner, loser)
+
+    def _start(self):
+        print(f'{self._pokemon1.name}が現れた！{self._pokemon1.name}のHPは{self._pokemon1.hp}だ！')
+        print(f'{self._pokemon2.name}が現れた！{self._pokemon2.name}のHPは{self._pokemon2.hp}だ！')
+
+    def _attack(self):
+        while True:
+            self._pokemon1.attack(self._pokemon2)
+            if self._pokemon2.is_fainted():
+                return (self._pokemon1, self._pokemon2)
+
+            self._pokemon2.attack(self._pokemon1)
+            if self._pokemon1.is_fainted():
+                return (self._pokemon2, self._pokemon1)
+
+    def _show_result(self, winner, loser):
+        print(f'{loser.name}は倒れた。{winner.name}の勝ち！')
