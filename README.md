@@ -8,6 +8,9 @@ PythonでOOP勉強
 ## プロジェクトについて
 OOPへの理解が甘すぎたので改めてPythonで勉強
 
+### 演習課題
+- 素早さのパラメータを追加する。素早さが高いポケモンが先に攻撃するようにする。素早さが同じ場合はランダムに攻撃する順番を決める。
+
 <p>参考</p>
 
 [![https://www.youtube.com/watch?v=7_hNvwSYEmo](https://img.youtube.com/vi/7_hNvwSYEmo/0.jpg)](https://www.youtube.com/watch?v=7_hNvwSYEmo)

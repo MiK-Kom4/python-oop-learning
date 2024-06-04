@@ -1,9 +1,10 @@
 class Pokemon:
-    def __init__(self, name, hp, atk):
+    def __init__(self, name, hp, atk, speed):
         self._name = name
         self._hp = hp
         self._max_hp = hp * 2
         self._atk = atk
+        self._speed = speed
 
     def attack(self, target):
         target.hp -= self._atk
@@ -28,6 +29,10 @@ class Pokemon:
     def atk(self):
         return self._atk
 
+    @property
+    def speed(self):
+        return self._speed
+
     @hp.setter
     def hp(self, value):
         if value < 0:
@@ -39,7 +44,7 @@ class Pokemon:
 
 class Pikachu(Pokemon):
     def __init__(self):
-        super().__init__('ピカチュウ', 20, 10)
+        super().__init__('ピカチュウ', 20, 10, 3)
 
     def attack_message(self, target):
         print(f'10万ボルト！{target.name}は{self._atk}ダメージをもらった！{target.name}のHPは{target.hp}だ！')
@@ -47,7 +52,7 @@ class Pikachu(Pokemon):
 
 class Hitokage(Pokemon):
     def __init__(self):
-        super().__init__('ヒトカゲ', 18, 5)
+        super().__init__('ヒトカゲ', 18, 5, 3)
 
     def attack_message(self, target):
         print(f'ひのこ！{target.name}は{self._atk}ダメージをもらった！{target.name}のHPは{target.hp}だ！')
